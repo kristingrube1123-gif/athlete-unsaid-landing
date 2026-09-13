@@ -60,6 +60,24 @@
     text-shadow: 0 1px 8px rgba(0,0,0,0.4);
   }
 
+  .mark .why-link {
+    position: absolute;
+    right: 28px;
+    top: 38px;
+    font-family: "Public Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--paper);
+    text-shadow: 0 1px 8px rgba(0,0,0,0.4);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(237,230,214,0.6);
+    padding-bottom: 2px;
+  }
+
+  @media (max-width: 480px) {
+    .mark .why-link { display: none; }
+  }
+
   .hero-media {
     position: relative;
     min-height: 62vh;
@@ -244,6 +262,7 @@
   <div class="hero-media">
     <header class="mark">
       <span>ATHLETE UNSAID</span>
+      <a class="why-link" href="why.html">Why Athlete Unsaid</a>
     </header>
     <div class="wrap">
       <section class="hero">
@@ -264,7 +283,7 @@
       </div>
       <div class="note">
         <h2>Say it without your name attached</h2>
-        <p>Every post can be shared anonymously. Other members never see who's behind it — only your sport and level. You stay findable to no one but yourself.</p>
+        <p>Every post can be shared anonymously. Other members never see who's behind it — only your sport and level. <a href="why.html" style="color:var(--gold); text-decoration:none; border-bottom:1px solid var(--gold);">Why this matters →</a></p>
       </div>
       <div class="note">
         <h2>Moderated by a mental performance coach, not an algorithm</h2>
