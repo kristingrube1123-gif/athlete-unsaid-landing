@@ -117,7 +117,7 @@
     font-family: "Fraunces", Georgia, serif;
     font-optical-sizing: auto;
     font-weight: 500;
-    font-size: clamp(2.55rem, 5.2vw, 4.8rem);
+    font-size: clamp(2.35rem, 4.25vw, 3.95rem);
     line-height: 1.02;
     letter-spacing: -0.025em;
     margin: 0 0 24px;
@@ -347,6 +347,23 @@
     }
   }
 
+
+  .hero-scroll {
+    display: inline-block;
+    padding: 13px 22px;
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    transition: background .2s ease, color .2s ease;
+  }
+  .hero-scroll:hover {
+    background: var(--gold);
+    color: var(--ink);
+  }
+
 </style>
 <!-- Privacy-friendly analytics by Plausible -->
 <script async src="https://plausible.io/js/pa-IVay36dLcxti4LNSkPiKy.js"></script>
@@ -367,7 +384,7 @@
         <h1>The conversations athletes<br>don't have anywhere else.</h1>
         <p class="lede">There are things you don't tell your coach. Things you don't tell your teammates. And things you don't even like admitting to yourself.</p>
         <div class="hero-actions">
-          <a class="cta" href="https://community.athleteunsaid.com">Start your 14-day free trial →</a>
+          <a class="hero-scroll" href="#inside">See what's inside ↓</a>
           <a class="hero-secondary" href="why.html">Why Athlete Unsaid exists →</a>
         </div>
         <p class="hero-micro">Private. Anonymous when you want to be. Cancel anytime.</p>
@@ -377,7 +394,8 @@
 
   <div class="wrap">
 
-    <section class="notes">
+    <div id="inside"></div>
+<section class="notes">
       <div class="note">
         <h2>Built for athletes, not strangers off the internet</h2>
         <p>Every member joins as an athlete, coach, or former athlete. This isn't an open public forum anyone can wander into — it's a room for people who've actually been where you are.</p>
@@ -424,7 +442,8 @@
       <span class="sep">·</span>
       <a href="terms.html">Terms</a>
       <span class="sep">·</span>
-      <a href="https://community.athleteunsaid.com">Community</a>
+      <a href="https://community.athleteunsaid.com" class="cta">Start your 14-day free trial →</a>
+<p style="margin-top:14px;font-size:13px;opacity:.68;">14 days free. Card required. Cancel anytime. You won't be charged until your trial ends.</p>
     </div>
   </footer>
 
